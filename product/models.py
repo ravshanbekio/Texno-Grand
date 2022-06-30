@@ -1,7 +1,6 @@
 from django.db import models
 from user.models import User
 
-
 class Category(models.Model):
     category_name = models.CharField(max_length=100, unique=True)
     date = models.DateTimeField(auto_now_add=True)
